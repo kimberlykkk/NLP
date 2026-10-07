@@ -1,0 +1,20 @@
+任务                        自检项                               结果        关键指标
+task-1-transformer        attention_correctness             通过        {"max_abs_diff": 7.152557373046875e-07}
+task-1-transformer        causal_mask                       通过        {"leaked_diff": 0.0}
+task-1-transformer        classifier_accuracy               通过        {"accuracy": 0.8567, "baseline_reference": 0.85}
+task-2-mini-gpt           tokenizer_roundtrip               通过        {}
+task-2-mini-gpt           kv_cache_equivalence              通过        {"max_abs_diff": 1.9073486328125e-06}
+task-2-mini-gpt           perplexity_on_dev                 通过        {"perplexity": 32.32, "threshold": 50.0, "n_tokens": 3302, "dataset": 
+task-3-sft-dpo            lora_param_count                  通过        {"trainable": 540672, "total": 494573440, "ratio": 0.00109}
+task-3-sft-dpo            loss_masking                      通过        {"mask_ratio": 0.422, "note": "若不在 (0.2, 0.9) 范围，请检查 user/system 是否全部 
+task-3-sft-dpo            sft_vs_base                       通过        {"note": "仅校验 ckpt/sft 非空；输出质量请手动跑 src/compare.py 对比 base 与 SFT 并附在提交里
+task-4-rag                chunking_sanity                   通过        {"chunks": 16, "avg_len": 255.0}
+task-4-rag                nndl_gold_recall_at_10            通过        {"n": 30, "recall_at_1": 0.5, "recall_at_3": 0.733, "recall_at_5": 0.8
+task-4-rag                rag_end_to_end                    通过        {"answer_preview": "前馈神经网络的基本特点是信息沿着网络从输入到输出单向传播，不存在反馈连接。这使得前馈神经网络在处理序
+task-5-tool-agent         tools_individual                  通过        {}
+task-5-tool-agent         multi_tool_success_rate           通过        {"rate": 1.0, "n": 10}
+task-5-tool-agent         error_recovery                    跳过        {"skip": "需要学生实现 inject_error 测试钩子；可选实验"}
+task-6-coding-agent       mcp_server_lists_tools            通过        {}
+task-6-coding-agent       skill_loader_metadata             通过        {"count": 3}
+task-6-coding-agent       toy_repo_patch                    通过        {"tests_passed": true, "pytest_output": "...                          
+task-6-coding-agent       swebench_lite_sample              跳过        {"skip": "data/swebench-lite-sample.parquet 不存在；需要时跑 data/download.py 

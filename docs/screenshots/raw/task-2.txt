@@ -1,0 +1,6 @@
+$ C:\Users\32362\AppData\Local\Programs\Python\Python314\python.exe task-2-mini-gpt/eval/run.py
+[通过] tokenizer_roundtrip: {"test": "tokenizer_roundtrip", "pass": true, "failures": []}
+[通过] kv_cache_equivalence: {"test": "kv_cache_equivalence", "pass": true, "max_abs_diff": 1.9073486328125e-06}
+[通过] perplexity_on_dev: {"test": "perplexity_on_dev", "pass": true, "perplexity": 32.32, "threshold": 50.0, "n_tokens": 3302, "dataset": "poetry"}
+
+结果写入 eval\result.json

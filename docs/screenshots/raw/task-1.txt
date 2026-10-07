@@ -1,0 +1,6 @@
+$ C:\Users\32362\AppData\Local\Programs\Python\Python314\python.exe task-1-transformer/eval/run.py
+[通过] attention_correctness: {"test": "attention_correctness", "pass": true, "max_abs_diff": 7.152557373046875e-07}
+[通过] causal_mask: {"test": "causal_mask", "pass": true, "leaked_diff": 0.0}
+[通过] classifier_accuracy: {"test": "classifier_accuracy", "pass": true, "accuracy": 0.8567, "baseline_reference": 0.85}
+
+结果写入 eval\result.json

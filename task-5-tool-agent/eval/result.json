@@ -1,0 +1,183 @@
+[
+  {
+    "test": "tools_individual",
+    "pass": true,
+    "results": {
+      "calculator": true,
+      "python_sandbox": true,
+      "file_search": true,
+      "wiki": true
+    },
+    "network_skipped": null
+  },
+  {
+    "test": "multi_tool_success_rate",
+    "pass": false,
+    "rate": 0.1,
+    "n": 10,
+    "details": [
+      {
+        "id": 1,
+        "success": false,
+        "final_answer_preview": "计算 (123 + 456) * 789 的结果，并告诉我结果的位数。�回答时，不要写代码块/Markdown，只写中文结论。\n})();\n})();\n})();\n})();\n})();\n})();\n})();\n})();\n})();\n})",
+        "expected_answer_contains": [
+          "456831",
+          [
+            "6位",
+            "6 位",
+            "六位",
+            "6 digits"
+          ]
+        ],
+        "expected_tools": [
+          "calculator"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 2,
+        "success": false,
+        "final_answer_preview": "用 Python 计算 100 以内所有质数的和。})();\neniable\naccoount\naccoount\naccoount\naccoount\naccoount\naccoount\naccoount\naccoount\naccoount\n",
+        "expected_answer_contains": [
+          "1060"
+        ],
+        "expected_tools": [
+          "python_sandbox"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 3,
+        "success": false,
+        "final_answer_preview": "在 data/assistant-fixtures 目录下找出所有 .md 文件，统计总数。})();\neniable\naccoount\naccoount\naccoount\naccoount\naccoount\naccoount\naccoou",
+        "expected_answer_contains": [
+          [
+            "2",
+            "两"
+          ]
+        ],
+        "expected_tools": [
+          "file_search"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 4,
+        "success": false,
+        "final_answer_preview": "你调用工具后，下一条 user 消息以「工具返回：」开头，是真实的工具输出，请据此作答；\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToFit\nToF",
+        "expected_answer_contains": [
+          [
+            "Turing",
+            "图灵"
+          ]
+        ],
+        "expected_tools": [
+          "wiki"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 5,
+        "success": false,
+        "final_answer_preview": "计算 123 + 456 * 789 的结果是 456831，共 6 位。鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕",
+        "expected_answer_contains": [
+          "1947",
+          [
+            "78",
+            "79"
+          ]
+        ],
+        "expected_tools": [
+          "wiki",
+          "calculator"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 6,
+        "success": true,
+        "final_answer_preview": "用 Python 写一个函数计算数学表达式，测试 'level' 和 'world' 两个词。�回文的函数返回 True/False。鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕\n鲕",
+        "expected_answer_contains": [
+          "level",
+          "True",
+          "world",
+          "False"
+        ],
+        "expected_tools": [
+          "python_sandbox"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 7,
+        "success": false,
+        "final_answer_preview": "{\"type\": \"function\", \"function\": {\"name\": \"assistant\", \"description\": \"根据用户输入生成回复。\", \"parameters\": {\"type\": \"object\", \"p",
+        "expected_answer_contains": [
+          "todo_note.md"
+        ],
+        "expected_tools": [
+          "file_search"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 8,
+        "success": false,
+        "final_answer_preview": "计算 sqrt(2026) 的小数点后 6 位结果。})();\neniable\n计算 sqrt(2026) 的小数点后 6 位结果。accooler\n计算 sqrt(2026) 的小数点后 6 位结果。accooler\n计算 sqrt(20",
+        "expected_answer_contains": [
+          [
+            "45.011110",
+            "45.01111"
+          ]
+        ],
+        "expected_tools": [
+          "calculator",
+          "python_sandbox"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 9,
+        "success": false,
+        "final_answer_preview": "123+456*789 的结果是 456831，共 6 位。})();\neniable\n123+456*789 的结果是 456831，共 6 位。})();\neniable\n123+456*789 的结果是 456831，共 6 位。})",
+        "expected_answer_contains": [
+          "2017",
+          "9"
+        ],
+        "expected_tools": [
+          "wiki",
+          "calculator"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      },
+      {
+        "id": 10,
+        "success": false,
+        "final_answer_preview": "读取 data/agent-fixtures/README.md，告诉我它的第二段写了什么。�回答时，不要使用中文，只写英文。掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭\n掭",
+        "expected_answer_contains": [
+          "任务五",
+          "本地文件检索测试文件"
+        ],
+        "expected_tools": [
+          "file_search"
+        ],
+        "used_tools": [],
+        "used_expected_tools": null
+      }
+    ]
+  },
+  {
+    "test": "error_recovery",
+    "pass": null,
+    "skip": "需要学生实现 inject_error 测试钩子；可选实验"
+  }
+]
